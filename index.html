@@ -1,157 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Ridzky Sultan" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="icon" type="x-icon" href="/images/Logobaru.png">
-    <title>Module 2</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="">
-            <img src="./images/Logobaru.png" alt="my-logo" />
-        </div>
-        <div id="menu-icon" class="menu-icon">
-            <i class="fa fa-bars"></i>
-        </div>
-        <ul id="menu-list" class="hidden">
-            <li><a href="#">Home</a</li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-        </ul>
-    </nav>
+    <link rel="icon" href="./images/APM-logo.png" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>APM Pisang | Module 2</title>
+  </head>
 
-    <!-- HERO -->
+  <body>
     <header>
-        <div class="hero-container">
-            <div class="hero-row">
-                <div class="hero-col">
-                    <h1 class="hero-title">APM Pisang</h1>
-                    <p>UMKM Asal Bandung yang menjual pisang goreng tepung dengan topping yang melimpah dan variatif<br><br>
+      <nav class="logo">
+        <img src="./images/APM-logo.png" alt="Logo APM" />
+      </nav>
+      <nav class="menu">
+        <ul class="menu-tab">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Gabung</a></li>
+          <li><a href="#">Product</a></li>
+        </ul>
+      </nav>
 
-                        <b>APM Pisang Bandung</b>
-                    </p>
-                </div>
-            </div>
-        </div>
+      <nav class="nav-mobile">
+        <i class="fa-solid fa-bars" id="menuBtn"></i>
+        <i class="fa-solid fa-xmark" id="x"></i>
+      </nav>
     </header>
 
     <main>
-        <section class="wrapper">
-            <div class="bestseller">
-                <h2 class="heading">APM Pisang</h2>
-                <p class="sub-heading">BEST SELLER</p>
-            </div>
-            <div class="features feature-1">
-                <h2 class="price">IDR 12.000</h2>
-                <p class="item">Pisang Coklat</p>
-            </div>
-            <div class="features feature-2">
-                <h2 class="price">IDR 12.000</h2>
-                <p class="item">Pisang Keju</p>
-            </div>
-        </section>
+      <!-- banner -->
+      <section class="banner">
+        <div class="banner-video">
+          <video width="100%" autoplay loop muted>
+            <source src="./images/video/hero-banner.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="banner-text">
+          <h1>APM Pisang. No.1 Kalau masalah pisang.</h1>
+        </div>
+      </section>
 
-        <!-- programs -->
-        <section id="programs">
-            <div class="container">
-                <h2 class="section-title">Visi & Misi</h2>
+      <!-- introduction -->
+      <section class="introduction">
+        <div>
+          <h1>Minat Untuk Bermitra dengan kami?</h1>
+        </div>
+        <div>
+          <button>Gabung</button>
+        </div>
+      </section>
 
-                <div class="program-grid">
-                    <div class="grid-item" id="visi-img">
-                        <img loading="lazy" src="./images/banana-icon.jpg" alt="visi">
-                    </div>
-                    <div class="grid-item" id="visi-text">
-                        <h3>Visi</h3>
-                        <p>Kami berkomitmen untuk menjadi pemimpin dalam industri camilan berbahan dasar pisang, terus berinovasi, dan menyebarkan kebahagiaan ke seluruh pelosok Indonesia dan dunia.</p>
-                    </div>
-                    <div class="grid-item" id="misi-img">
-                        <img loading="lazy" src="./images/banana-icon.jpg" alt="misi">
-                    </div>
-                    <div class="grid-item" id="misi-text">
-                        <h3>Misi</h3>
-                        <p>Misi kami adalah memberikan pengalaman kuliner terbaik dengan inovasi pada produk berbasis pisang, memastikan setiap camilan yang kami sajikan berkualitas tinggi dan menggembirakan.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="introduction-title">
+        <div class="title-container">
+          <div class="title-container-text">
+            <h3>
+              Produk Berkualitas</h3>
+            <p>
+              Produk yang kami jual memenuhi standar kualitas tinggi.
+            </p>
+          </div>
+          <div class="title-container-text">
+            <h3>Varian Beragam</h3>
+            <p>Varian produk memiliki berbagai rasa yang beragam.</p>
+          </div>
+          <div class="title-container-text">
+            <h3>Harga Terjangkau</h3>
+            <p>
+              Selalu berusaha memberikan harga yang kompetitif.
+            </p>
+          </div>
+          <div class="title-container-text">
+            <h3>Dukungan Responsif</h3>
+            <p>
+              Memberikan informasi dengan ramah dan profesional.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Menu Section -->
-        <section class="menu">
-            <h2>Menu APM Pisang</h2>
-            <div class="flex-container">
-            <ul style= "list-style-type: '&#127820;'">
-                <li>Pisang Coklat</li>
-                <li>Pisang Keju</li>
-                <li>Pisang Matcha</li>
-            </ul>
-            <figure>
-                <picture>
-                <source
-                    media="(max-width: 480px)"
-                    srcset="/images/Logobaru.png"
-                />
-                <img
-                    src="./images/Logobaru.png"
-                    alt="APMPisang."
-                />
-                </picture>
-            </figure>
-            </div>
-        </section>
-        <!-- Gallery Section -->
-        <section class="gallery">
-            <h2>Gallery</h2>
-            <div class="grid-container">
-                <div class="gallery-item" id="item-1">
-                    <img
-                    src="./images/pisang3.jpg"
-                    alt=" "
-                    />
-                </div>
-                <div class="gallery-item" id="item-2">
-                    <img
-                    src="./images/pisang4.jpg"
-                    alt=" "
-                    />
-                </div>
-                <div class="gallery-item" id="item-3">
-                    <img
-                    src="./images/pisang5.jpg"
-                    alt=" "
-                    />
-                </div>
-                <div class="gallery-item" id="item-4">
-                    <img
-                    src="./images/pisang6.jpg"
-                    alt=" "
-                    />
-                </div>
-                <div class="gallery-item" id="item-5">
-                    <img
-                    src="./images/hero1.jpg"
-                    alt=" "
-                    />
-                </div>
-            </div>
-        </section>
+      <!-- product -->
+      <section class="product">
+        <div>
+          <h1>Produk kami</h1>
+        </div>
 
+        <div>
+          <a href="./explore.html">
+            <button>Explore</button>
+          </a>
+        </div>
 
-
-
+        <div class="product-categories">
+          <div
+            class="product-categories-container"
+            id="product-categories-container-1"
+          >
+            <img src="./images/pisangcoklat.png" alt="product Category 1" />
+            <h3>Pisang Coklat</h3>
+            <p>Pisang ditaburi topping coklat</p>
+          </div>
+          <div
+            class="product-categories-container"
+            id="product-categories-container-2"
+          >
+            <img src="./images/pisangkeju.png" alt="product Category 2" />
+            <h3>Pisang Keju</h3>
+            <p>Pisang ditaburi topping Keju</p>
+          </div>
+          <div
+            class="product-categories-container"
+            id="product-categories-container-3"
+          >
+            <img src="./images/pisangtiramisu.png" alt="product Category 3" />
+            <h3>Pisang tiramisu</h3>
+            <p>Pisang ditaburi topping tiramisu</p>
+          </div>
+      </section>
     </main>
-    <!-- Footer -->
+
     <footer>
-        <p>Copyright &copy; 2024 All Rights Reserved.</p>
+      <div class="footer-link-tab">
+        <ul>
+          <span><li>Perusahaan</li></span>
+          <li><a href="#">Tentang</a></li>
+        </ul>
+        <ul>
+          <span><li>Gabung</li></span>
+          <li><a href="#">Mitra Usaha</a></li>
+        </ul>
+        <ul>
+          <span><li>Produk</li></span>
+          <li><a href="#">Pesan </a></li>
+        </ul>
+        <ul>
+          <span><li>Hubungi kami</li></span>
+          <li><a href="#">Lokasi Kami</a></li>
+        </ul>
+        <ul>
+          <span><li>Connect with Us</li></span>
+          <div class="connect-icons">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <p>Copyright © 2024 All Rights Reserved.</p>
     </footer>
-</body>
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>

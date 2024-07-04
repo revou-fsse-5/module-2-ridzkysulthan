@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+}
+
+.grid-container {
+    width: 80%;
+    margin: 3em 10%;
+    columns: 4;
+    column-gap: 20px;
+  }
+  
+  .grid-box {
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;
+  }
+  
+  .grid-box img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+  footer{
+    background-color: #fcd12a;
+  }
