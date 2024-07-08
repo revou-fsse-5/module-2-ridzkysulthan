@@ -9,6 +9,9 @@
     .product-box img {
       width: auto;
     }
+    .grid-container {
+      columns: 3;
+    }
   }
 }
 
@@ -40,6 +43,9 @@
 
     .product-categories-container img {
       width: 200px;
+    }
+    .card-list {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
@@ -102,6 +108,9 @@
     .menu-tab li:hover {
       text-decoration: underline;
     }
+    .card-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 
@@ -110,6 +119,12 @@
     .banner-text {
       position: absolute;
       top: 20%;
+    }
+    .card-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-container {
+      columns: 2;
     }
   }
 }
@@ -120,6 +135,9 @@
       position: absolute;
       top: 15%;
       font-size: 65%;
+    }
+    .card-list {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
@@ -138,6 +156,9 @@
     .banner-text {
       position: absolute;
       top: 10%;
+    }
+    .card-list {
+      grid-template-columns: 1fr;
     }
   }
 }

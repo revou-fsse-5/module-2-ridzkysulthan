@@ -145,45 +145,6 @@ button:hover {
   margin: 10em 10%;
 }
 
-.product-categories-container img {
-  width: 250px;
-  position: absolute;
-  transform: translateY(-10em);
-}
-
-.product-categories-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20%;
-  text-align: center;
-  padding: 1em 1em 3em;
-  border-radius: 50px;
-  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.15);
-}
-
-.product-categories-container h3 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-  margin-top: 3em;
-}
-
-.product-categories-container p {
-  font-size: 1em;
-}
-
-#product-categories-container-1 {
-  background-color: #7ccc6c;
-}
-
-#product-categories-container-2 {
-  background-color: #7ccc6c;
-}
-
-#product-categories-container-3 {
-  background-color: #7ccc6c;
-}
-
 
 .footer-link-tab > ul > li,
 a,
@@ -230,4 +191,93 @@ footer a:hover {
 }
 footer i:hover {
   scale: 1.2;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 1250px;
+  margin: 50px auto;
+  padding: 20px;
+  gap: 20px;
+}
+.card-list .card-item {
+  background: #F8F7F3;
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+.card-list .card-item:hover {
+  border: 2px solid #000;
+}
+.card-list .card-item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.card-list span {
+  display: inline-block;
+  background: #F7DFF5;
+  margin-top: 32px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.card-list .designer {
+  background-color: #d6f8d6;
+  color: #205c20;
+}
+
+.card-item h3 {
+  color: #000;
+  font-size: 1.438rem;
+  margin-top: 28px;
+  font-weight: 600;
+}
+.card-item .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-top: 40px;
+  transition: 0.2s ease;
+}
+.card-list .card-item:hover .arrow  {
+  background: #000;
+  color: #fff; 
+} 
+.baru{
+  margin: 50px;
+  display: block;
+}
+.baru-icon {
+  font-size: 28px;
+  display: none;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+.flex-container figure {
+  margin-left: auto;
+}
+
+.flex-container figure img {
+  /* height: 400px; */
+  width: 100%;
+  max-width: 250px;
+  height: auto;
 }
